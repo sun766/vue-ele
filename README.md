@@ -40,3 +40,6 @@ vertical-align: top
   <i class="icon-close"></i>
 </div>
 
+* css兼容性问题
+VUE-CLI中会有POSTCSS去自动处理兼容性问题，POSTCSS根据CAN I USE 官网编写。
+
