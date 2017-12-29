@@ -1,27 +1,8 @@
-# sell
+# 作为实战练手
 
-> sell app
+该项目最初使用VUE 1.0版本开发，在学习过程中通过VUE 2.0进行转化。同时离不开度娘支持。
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+遇到问题1：
+①、github上传文件，提示： refuse to merge unrelated histories.
+原因： 先前已经写好代码，1、 初始化本地代码仓库 2、github创建一个新的仓库并clone下来 3、push出现该问题。根本原因：此时clone下来同本地没有关系。
+尝试很多办法无效，就使用最笨的方法：保留1,2；将原项目复制到本地代码仓库中 在执行 3。
