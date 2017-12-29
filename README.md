@@ -25,3 +25,18 @@ text-overflow: ellipse
 * 行内元素对齐
 vertical-align: top
 
+* css sticky footers
+该设计师最古老和最常见的效果之一，他可以概括如下： 如果页面内容不够长的时候，页面块黏贴到视窗底部；如果内容足够长，页脚块会被内容乡下推送。
+结构布局：
+/*最外层包装，保证min-height: 100%*/
+<div class="detail-wrapper clearfix">
+
+   /*内容主体部分，要设置padding-bottom: 30px;保证给关闭按钮预留位置*/
+   <div class="detail-main"></div>
+</div>
+
+/*关闭按钮位置： 保证 clear: both ;position: relative ;margin-top: -30px*/
+<div class="detail-close">
+  <i class="icon-close"></i>
+</div>
+
