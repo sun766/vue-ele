@@ -43,3 +43,23 @@ vertical-align: top
 * css兼容性问题
 VUE-CLI中会有POSTCSS去自动处理兼容性问题，POSTCSS根据CAN I USE 官网编写。
 
+*伸缩布局使用flex
+ 父元素设置： display：flex
+ 子元素根据需要设置flex 的属性，一般为： flex: 0 1 auto
+ 
+*关于单行或多行文字居中显示： display: table
+
+*写样式的先后顺序
+display 
+margin/padding
+width/height
+line-height
+border
+font/font-size/color
+background
+
+* Vue中获取DOM对象ref="el"
+this.$refs.el
+
+*this.$nextTick()
+每次数据更新都会引发DOM重新渲染，数据更新的操作是异步的所以不确定什么时候渲染完成。此时提供一个API,this.$nextTick(()=>{将执行的操作放入})
